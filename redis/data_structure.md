@@ -116,6 +116,11 @@ Redis 的扩容比较有特色，采用的是渐进式 rehash。即 Redis 实际
 - 如果我有一个小的整数数据集想要放到 Redis，Redis会用什么结构来存储？
 - Redis 的`intset`是否支持降级？
 
+#### 跳表
+查找o(logn)
+每个节点可能是多层，层数rand决定
+![跳表](img/skip_list.png)
+
 ## 总结
 
 Redis 的问题大同小异，套路就是：
